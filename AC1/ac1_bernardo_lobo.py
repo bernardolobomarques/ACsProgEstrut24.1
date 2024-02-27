@@ -13,8 +13,8 @@ def exercicio1():
     b = int(input("Qual o valor do \"b\" da funcao? "))
     c = int(input("Qual o valor do \"c\" da funcao? "))
 
-    resultado1 = (-b + ((b**2 - 4*a*c)**(1/2)))/2
-    resultado2 = (-b - ((b**2 - 4*a*c)**(1/2)))/2
+    resultado1 = (-b + ((b**2 - 4*a*c)**(1/2)))/2*a
+    resultado2 = (-b - ((b**2 - 4*a*c)**(1/2)))/2*a
     print(resultado1, "\n", resultado2)
     return(resultado1, resultado2)
 
