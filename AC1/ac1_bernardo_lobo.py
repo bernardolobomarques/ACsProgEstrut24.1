@@ -3,7 +3,7 @@
 PROGRAMAÇÃO ESTRUTURADA 2024.1
 AC 1
 BERNARDO LOBO MARQUES - MATRICULA: 202401709433
-27.02.24
+28.02.24
 
 """
 
@@ -20,8 +20,7 @@ def exercicio1():
 
 def exercicio2():
     ano = int(input("Qual o ano que gostaria de saber se e ou nao bissexto? "))
-    controle = ano%4
-    print(controle == 0)
+    print((ano%4) == 0 and ((ano % 400 == 0) or not(ano%100 == 0)))
 
 
 def main():
