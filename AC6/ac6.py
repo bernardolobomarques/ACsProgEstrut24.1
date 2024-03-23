@@ -48,4 +48,4 @@ def ex_1017():
     distancia = (((b[0] - a[0])**2)+((b[1]-a[1])**2))**(1/2)
     print(f"{distancia:.4f}")
 
-ex_1017()
+# ex_1017()
