@@ -18,23 +18,19 @@ def ex_1010():
 
 # ex_1010()
     
-def ex_1013():
-    dados = input()
+def ex_1015():
+    lista_input = input()
+    lista_input = lista_input.split(" ")
+    valor_a = int(lista_input[0])
+    valor_b = int(lista_input[1])
+    valor_c = int(lista_input[2])
 
-    dados = dados.split(" ")
-    dados[0] = int(dados[0])
-    dados[1] = int(dados[1])
-    dados[2] = int(dados[2])
+    maior_a_b = (valor_a + valor_b + abs(valor_a-valor_b))/2
+    if maior_a_b < valor_c:
+        print(f"{valor_c} eh o maior")
+    else:
+        print(f"{int(maior_a_b)} eh o maior")
 
-    if dados[0]>dados[1] and dados[0] > dados[2]:
-        print(dados[0], "eh o maior")
-    elif dados[1]>dados[0] and dados[1]>dados[2]:
-        print(dados[1], "eh o maior")
-    elif dados[2]>dados[0] and dados[2]>dados[1]:
-        print(dados[2], "eh o maior")
-
-# ex_1013()
-        
 def ex_1017():
     a = input()
     a = a.split(" ")
