@@ -1,21 +1,17 @@
-qtd_vezes = int(input())
+entrada = int(input())
+lista = []
 
-for _ in range(1, qtd_vezes):
-    lista_x = []
-    lista_cont = []
-    for _ in range(qtd_vezes):
-        x = int(input())
-        for i in range(len(lista_x)):
-            if lista_x[i] % x == 0:
-                lista_x[i] += x
-                lista_cont[i] += 1
-        else:
-            lista_x.append(x)
-            lista_cont.append(1)
+for _ in range(entrada):
+    num = int(input())
+    lista.append(num)
 
-    # print(lista_x)
-    
-    lista_x.sort()
+contador = {}
 
-    for i in range(len(lista_x)):
-        print(f"{int(lista_x[i]/lista_cont[i])} aparece {int(lista_cont[i])} vez(es)")
+for num in lista:
+    if num in contador:
+        contador[num] += 1
+    else:
+        contador[num] = 1
+
+for i in sorted(contador.items()):
+    print(f"{i[0]} aparece {i[1]} vez(es)")
